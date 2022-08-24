@@ -13,3 +13,17 @@ function enviar(){
         alert("Seu feedback foi enviado")
     }
 }
+
+//Location
+let espaco = document.getElementById('espaco')
+// let espaco = document.querySelector('#espaco')
+
+function getSpace(){
+    let url = location.href
+    espaco.innerHTML = `URL: ${url}`
+}
+
+// Dark Theme
+function darkTheme(){
+    document.body.classList.toggle('dark-theme')
+}
